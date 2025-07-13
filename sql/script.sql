@@ -1,6 +1,8 @@
 CREATE DATABASE DB_LOJA;
 
-DROP DATABASE DB_LOJA;
+# DROP DATABASE DB_LOJA;
+
+USE DB_LOJA;
 
 CREATE TABLE tb_pessoas (
     PessoaID int,
@@ -21,3 +23,5 @@ VALUES (2, "Maria", "Silva", "Rua Flor", "31100-000"),
 UPDATE tb_pessoas
 SET Nome = "Isabel", Sobrenome = "Silva"
 WHERE PessoaID = 4;
+
+SELECT * FROM tb_pessoas;
